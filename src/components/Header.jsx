@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, useNavigate } from 'react-router-dom';
+import logo from '../assets/pencil.png'
 
 function Header({ user, onLogout }) {
   const [localUser, setLocalUser] = useState(() => {
@@ -32,7 +33,7 @@ function Header({ user, onLogout }) {
         {/* Logo & Title */}
         <Navbar.Brand>
           <Link to="/" className='text-white d-flex mt-2 ps-2' style={{ textDecoration: 'none', fontSize: '28px', justifyContent: 'space-evenly' }}>
-            <img src="src/assets/pencil.png" alt="Logo" style={{ width: "60px" }} />
+            <img src={logo} alt="Logo" style={{ width: "60px" }} />
             <h1 className='text-dark fs-3 ms-1'>Doodl</h1>
           </Link>
         </Navbar.Brand>
