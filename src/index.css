@@ -1,0 +1,148 @@
+
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #9c9c9c; */
+  /* height: 100%; 
+  margin: 0; */
+  
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  font-family: "Mynerve", serif;
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+  /* align-items: center;  */
+  justify-content: center; 
+  min-width: 520px;
+  min-height: 100vh;
+}
+.rules{
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.lobby{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card{
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: none;
+  font-size: large;
+}
+.submit-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.inpfield{
+  border: none;
+  width: 300px;
+}
+.signtext{
+  font-size: 33px;
+}
+#subtn{
+  padding-right: 15px;
+}
+.gray{
+  opacity: 50%;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #81eb1e;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #6c6d7b;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+.canvas-container {
+  width: 80vw;  /* Adjust width dynamically */
+  height: 60vh; /* Set a proper height */
+  max-width: 900px; /* Avoid canvas being too big */
+  max-height: 500px; /* Avoid overflow */
+  border: 3px solid rgb(205, 205, 255); /* Keep it inside the blue border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.col-lg-8 {
+  height: 80vh; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
